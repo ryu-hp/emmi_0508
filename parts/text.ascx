@@ -17,16 +17,16 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <link rel="stylesheet" href='<%= Constants.PATH_ROOT %>Css/lp_common.css?ver=<%: System.IO.File.GetLastWriteTime(HttpContext.Current.Server.MapPath(Constants.PATH_ROOT + @"Css/lp_common.css")).ToString("yyMMddHHmmss") %>'>
 <%-- コンテンツ部分用CSS読み込みここから --%>
-<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/emmi_lpTemplate/css/style.css" />
+<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/css/style.css" />
 <%-- コンテンツ部分用CSS読み込みここまで --%>
 
 <%-- ▽ 編集エリア ▽ --%>
-<section class="main-contents" id="(計測タグ)">
+<section class="main-contents" id="em240508arai">
 <p>ここにLPを作成してください。</p>
 </section>
 <%-- △ 編集エリア △ --%>
 
 <!-- コンテンツ部分用JS読み込みここから -->
-<script src="<%= Constants.PATH_ROOT %>Page/feature/emmi_lpTemplate/js/script.js"></script>
+<script src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/js/script.js"></script>
 <!-- コンテンツ部分用JS読み込みここまで -->
 <%-- △編集可能領域△ --%>
