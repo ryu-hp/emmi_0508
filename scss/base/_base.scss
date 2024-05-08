@@ -27,13 +27,13 @@ a:hover {
 .wp-block-image {
     margin-bottom: 0;
 }
-.only-mobile {
+.only-sp {
     display: none;
     @include mq(md) {
         display: block;
     }
 }
-.only-descktop {
+.only-pc {
     @include mq(md) {
         display: none;
     }
