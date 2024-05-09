@@ -27,8 +27,8 @@ $mediaquerys: (
     @return $number;
 }
 
-@function vw($window_width, $font_size) {
-    @return math.div($font_size, $window_width) * 100vw;
+@function vw($font_size) {
+    @return math.div($font_size, 390) * 100vw;
 }
 
 $base-font-family:  "Noto Sans JP", sans-serif;
@@ -39,7 +39,7 @@ $light : 300;
 
 $color-black: #000;
 $color-white: #fff;
-$color-theme: #003566;
+$color-theme: #0014FF;
 $color-bg_black: #555555;
 $color-bg_gray: #E6E6E6;
 

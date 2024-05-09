@@ -1,0 +1,51 @@
+@use "../global" as *;
+#em240508arai {
+    .sec-6 {
+        margin-top: rem(263);
+    }
+    .sec-6__inner {
+        width: 100%;
+        max-width: calc($inner);
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        @include mq(md) {
+            padding-right: $padding-sp;
+            padding-left: $padding-sp;
+        }
+    }
+    .sec-6__top_text {
+        max-width:rem(1107.5);
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+        transform: translateX(rem(-1));
+    }
+    .sec-6__first_image {
+        max-width:rem(819);
+        margin-right: auto;
+        margin-top: rem(-320.5);
+    }
+    .sec-6__second-images {
+        display: flex;
+        gap: rem(46);
+        margin-top: rem(133);
+    }
+    .sec-6__second-left_image {
+        max-width:rem(508);
+        width: 100%;
+        padding-top: rem(582);
+    }
+    .sec-6__second-right_image {
+        max-width:rem(726);
+        width: 100%;
+    }
+    .sec-6__bottom_text {
+        margin-top: rem(473);
+        max-width:rem(550);
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(rem(28));
+    }
+}

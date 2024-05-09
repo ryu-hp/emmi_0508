@@ -1,0 +1,35 @@
+@use "../global" as *;
+#em240508arai {
+    .sec-7 {
+        margin-top: rem(221.5);
+    }
+    .sec-7__inner {
+        width: 100%;
+        max-width: calc($inner);
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        @include mq(md) {
+            padding-right: $padding-sp;
+            padding-left: $padding-sp;
+        }
+    }
+    .sec-7__first-contents {
+        padding-top: rem(214);
+        background: linear-gradient(2700deg, $color-bg_black 0%, $color-bg_black rem(926), transparent rem(926), transparent 100%);
+    }
+    .sec-7__first-image {
+        max-width:rem(808);
+        margin-left: auto;
+    }
+    .sec-7__second-images {
+        margin-top: rem(183);
+        display: flex;
+    }
+    .sec-7__second-image {
+        max-width:rem(427);
+    }
+    .sec-7__second-image--center {
+        max-width:rem(428);
+    }
+}

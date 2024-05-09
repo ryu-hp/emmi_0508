@@ -1,0 +1,80 @@
+@use "../global" as *;
+#em240508arai {
+    .sec-9 {
+        margin-top: rem(249);
+        background: $color-bg_black;
+        overflow-x: clip;
+        margin-bottom: rem(1154);
+    }
+    .sec-9__inner {
+        width: 100%;
+        max-width: calc($inner);
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        padding-top: rem(1100);
+        padding-bottom: rem(784);
+        box-sizing: border-box;
+        @include mq(md) {
+            padding-right: $padding-sp;
+            padding-left: $padding-sp;
+        }
+    }
+    .sec-9__first_image {
+        max-width:rem(667);
+        position: absolute;
+        left: rem(95.3);
+        top: rem(-387.7);
+    }
+    .sec-9__second_image {
+        max-width:rem(572);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sec-9__third-images {
+        max-width: rem(1360);
+        width: calc(1360 / 1280 * 100vw);
+        margin-top: rem(468);
+    }
+    .sec-9__third-flex {
+        display: flex;
+        justify-content: end;
+        margin-top: rem(97);
+        padding-right: rem(28);
+    }
+    .sec-9__third-left_image ,
+    .sec-9__third-right_image {
+        max-width:rem(598);
+        width: 100%;
+    }
+    .sec-9__fourth-contents {
+        margin-top: rem(386.5);
+    }
+    .sec-9__fourth-text {
+        max-width:rem(255.2);
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(rem(21));
+    }
+    .sec-9__fourth-top_image {
+        max-width:rem(1032);
+        margin-right: auto;
+        margin-top: rem(293.7);
+    }
+    .sec-9__fourth-flex {
+        margin-top: rem(233);
+        display: flex;
+        gap: rem(25);
+    }
+    .sec-9__fourth-right_image,
+    .sec-9__fourth-left_image {
+        max-width:rem(593);
+        width: 100%;
+    }
+    .sec-9__fourth-bottom_image {
+        max-width:rem(798);
+        position: absolute;
+        bottom: rem(-599);
+        right: rem(69);
+    }
+}

@@ -3,6 +3,108 @@
     .sec-5 {
         padding-top: rem(628);
         margin-top: rem(-356);
+        padding-bottom: rem(731);
         background: $color-bg_gray;
+        position: relative;
+        @include mq(md) {
+            margin-top: vw(90.1);
+            background: transparent;
+        }
+    }
+    .sec-5__inner {
+        width: 100%;
+        max-width: calc($inner);
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        @include mq(md) {
+            padding-right: $padding-sp;
+            padding-left: $padding-sp;
+        }
+    }
+    .sec-5__inner-top_text {
+        @include mq(md) {
+            max-width:vw(191.66);
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 0;
+        }
+    }
+    .sec-5__first-contents {
+        display: flex;
+        @include mq(md) {
+            display: block;
+        }
+    }
+    .sec-5__first-image {
+        max-width:rem(765);
+        @include mq(md) {
+            max-width:vw(306.59);
+            margin-right: auto;
+        }
+    }
+    .sec-5__first-texts {
+        margin-left: rem(182.3);
+        padding-top: rem(611);
+        @include mq(md) {
+        }
+    }
+    .sec-5__first-text--top {
+        max-width:rem(81.2);
+        width: 100%;
+    }
+    .sec-5__first-text--bottom {
+        max-width:rem(56.64);
+        width: 100%;
+        margin-top: rem(32);
+        margin-left: rem(63.4);
+    }
+    .sec-5__second-images {
+        overflow-x: clip;
+        margin-top: rem(272);
+        @include mq(md) {
+            max-width:vw(41);
+        }
+    }
+    .sec-5__second-flex {
+        display: flex;
+        gap: rem(20);
+        max-width:rem(1865);
+        width: calc(1865 / 1280 * 100vw);
+        margin-left: rem(-495);
+        @include mq(md) {
+            gap: vw(10);
+            max-width:vw(572);
+            width: calc(572 / 390 * 100vw);
+            margin-left: vw(-156);
+        }
+    }
+    .sec-5__second-left_image {
+        max-width:rem(923);
+        width: 100%;
+        @include mq(md) {
+            max-width:vw(281);
+        }
+    }
+    .sec-5__second-right_image {
+        max-width:rem(922);
+        width: 100%;
+    }
+    .sec-5__third-images {
+        max-width:rem(582);
+        position: absolute;
+        left: calc(50% + rem(26));
+        bottom: rem(-477);
+        transform: translateX(-50%);
+        @include mq(md) {
+            position: static;
+            max-width:vw(250);
+            margin-left: auto;
+            margin-right: auto;
+            left: auto;
+            bottom: auto;
+            transform: translateX(0);
+            margin-top: vw(132);
+        }
     }
 }
