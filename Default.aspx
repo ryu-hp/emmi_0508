@@ -6,8 +6,8 @@
 =========================================================================================================
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
-<%@ Page Title="(企画名) │ emmi（エミ）公式サイト" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
-<%@ Register TagPrefix="uc" TagName="text" Src="~/Page/feature/emmi_lpTemplate/parts/text.ascx" %>
+<%@ Page Title="emmi SUMMER with Kiko Inagaki │ emmi（エミ）公式サイト" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Register TagPrefix="uc" TagName="text" Src="~/Page/feature/atelier/240508_arai/parts/text.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%--
 
@@ -18,7 +18,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:description" content="(企画名)" />
+<meta property="og:description" content="emmi SUMMER with Kiko Inagaki" />
 <%-- △編集可能領域△ --%>
 </asp:Content>
 
@@ -28,7 +28,7 @@
 <main class="main-area lp">
   <!-- ▽▽編集エリア -->
   <div class="bredlist lp">
-    <a href="<%= Constants.PATH_ROOT %>">emmi（エミ）</a> &gt; (企画名)
+    <a href="<%= Constants.PATH_ROOT %>">emmi（エミ）</a> &gt; emmi SUMMER with Kiko Inagaki
   </div>
   <uc:text runat="server" />
   <!-- △△編集エリア -->
