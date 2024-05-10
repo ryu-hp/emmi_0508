@@ -9,6 +9,8 @@
         @include mq(md) {
             margin-top: vw(90.1);
             background: transparent;
+            padding-bottom: 0;
+            padding-top: 0;
         }
     }
     .sec-5__inner {
@@ -17,23 +19,27 @@
         margin-right: auto;
         margin-left: auto;
         box-sizing: border-box;
-        @include mq(md) {
-            padding-right: $padding-sp;
-            padding-left: $padding-sp;
-        }
     }
+    .sec-5__inner-top_text_contents,
     .sec-5__inner-top_text {
         @include mq(md) {
-            max-width:vw(191.66);
+            width:vw(191.66);
             margin-left: auto;
             margin-right: auto;
             padding-top: 0;
+            transform: translateX(vw(-3));
         }
+    }
+    .sec-5__inner-top_text_contents {
+        overflow-x: hidden;
+        max-width: vw(191.66);
+        width: 100%;
     }
     .sec-5__first-contents {
         display: flex;
         @include mq(md) {
             display: block;
+            margin-top: vw(82.3);
         }
     }
     .sec-5__first-image {
@@ -50,10 +56,16 @@
         }
     }
     .sec-5__first-text--top {
+        width:rem(81.2);
+    }
+    .sec-5__first-text--top_container {
         max-width:rem(81.2);
         width: 100%;
     }
     .sec-5__first-text--bottom {
+        width:rem(56.64);
+    }
+    .sec-5__first-text--bottom_container {
         max-width:rem(56.64);
         width: 100%;
         margin-top: rem(32);
@@ -63,7 +75,7 @@
         overflow-x: clip;
         margin-top: rem(272);
         @include mq(md) {
-            max-width:vw(41);
+            margin-top: vw(41.3);
         }
     }
     .sec-5__second-flex {
@@ -76,7 +88,7 @@
             gap: vw(10);
             max-width:vw(572);
             width: calc(572 / 390 * 100vw);
-            margin-left: vw(-156);
+            margin-left: vw(-157);
         }
     }
     .sec-5__second-left_image {
@@ -103,8 +115,8 @@
             margin-right: auto;
             left: auto;
             bottom: auto;
-            transform: translateX(0);
-            margin-top: vw(132);
+            transform: translateX(vw(2));
+            margin-top: vw(131.3);
         }
     }
 }

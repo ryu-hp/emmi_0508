@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+.typing-effect {
+  /* タイプライターアニメーションの設定 */
+  animation: typing 3s steps(23) infinite, effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow-x: clip;
+  border-right: 3px solid;
+}
+
+.typing-effect--5 {
+  animation: typing 3s steps(5) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--11 {
+  animation: typing 3s steps(11) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--21 {
+  animation: typing 3s steps(21) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--16 {
+  animation: typing 3s steps(16) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--22 {
+  animation: typing 3s steps(22) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--17 {
+  animation: typing 3s steps(17) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--7 {
+  animation: typing 3s steps(7) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--3 {
+  animation: typing 3s steps(3) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--10 {
+  animation: typing 3s steps(10) infinite, effect 0.5s step-end infinite alternate;
+}
+.typing-effect--12 {
+  animation: typing 3s steps(12) infinite, effect 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

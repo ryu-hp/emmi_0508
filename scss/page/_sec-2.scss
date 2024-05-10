@@ -50,6 +50,7 @@
         max-width:rem(962);
         @include mq(md) {
             margin-top: vw(258.7);
+            overflow-x: clip;
         }
     }
     .sec-2__second-text {
@@ -59,21 +60,22 @@
         @include mq(md) {
             max-width:vw(82.36);
             top: vw(-134.1);
-            left: 50%;
+            left: calc(50% + vw(19));
             transform: translateX(-50%);
         }
     }
     .sec-2__second-image {
         @include mq(md) {
             max-width:vw(378);
-            margin-right: vw(-18);
+            margin-right: vw(-17);
+            margin-left: auto;
         }
     }
     .sec-2__third {
         margin-top: rem(126);
         overflow-x: clip;
         @include mq(md) {
-            margin-top: vw(40);
+            margin-top: vw(41.3);
         }
     }
     .sec-2__third-flex {
@@ -84,6 +86,9 @@
         @media screen and (max-width:1400px) {
             width: calc((737 + 32 + 632) / 1280 * 100vw);
             margin-left: rem(-79);
+        }
+        @include mq(md) {
+            display: none;
         }
     }
     .sec-2__third-image-top {
@@ -111,7 +116,7 @@
             margin-right: auto;
         }
     }
-    .sec-2__third-text {
+    .sec-2__third-text_contents {
         max-width:rem(555);
         position: absolute;
         left: rem(-164.4);
@@ -121,7 +126,21 @@
             max-width:vw(222.28);
             top: auto;
             bottom: vw(-17.6);
-            left: vw(44.8);
+            left: vw(43);
+        }
+
+    }
+    .sec-2__third-text {
+        width:rem(555);
+        // position: absolute;
+        // left: rem(-164.4);
+        // top: rem(-37.8);
+        // width: 100%;
+        @include mq(md) {
+            width:vw(222.28);
+            // top: auto;
+            // bottom: vw(-17.6);
+            // left: vw(43);
         }
     }
     .sec-2__fourth {
@@ -131,8 +150,9 @@
         margin-top: rem(249);
         transform: translateX(rem(48));
         @include mq(md) {
-            max-width:vw(333);
+            max-width:vw(330);
             margin-top: vw(204);
+            transform: translateX(0);
         }
     }
 }

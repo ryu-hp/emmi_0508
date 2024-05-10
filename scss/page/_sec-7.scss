@@ -2,6 +2,9 @@
 #em240508arai {
     .sec-7 {
         margin-top: rem(221.5);
+        @include mq(md) {
+            margin-top: vw(133.9);
+        }
     }
     .sec-7__inner {
         width: 100%;
@@ -9,22 +12,28 @@
         margin-right: auto;
         margin-left: auto;
         box-sizing: border-box;
-        @include mq(md) {
-            padding-right: $padding-sp;
-            padding-left: $padding-sp;
-        }
     }
     .sec-7__first-contents {
         padding-top: rem(214);
         background: linear-gradient(2700deg, $color-bg_black 0%, $color-bg_black rem(926), transparent rem(926), transparent 100%);
+        @include mq(md) {
+            padding-top: vw(90);
+            background: linear-gradient(2700deg, $color-bg_black 0%, $color-bg_black vw(300), transparent vw(300), transparent 100%);
+        }
     }
     .sec-7__first-image {
         max-width:rem(808);
         margin-left: auto;
+        @include mq(md) {
+            max-width:vw(266.6);
+        }
     }
     .sec-7__second-images {
         margin-top: rem(183);
         display: flex;
+        @include mq(md) {
+            margin-top: vw(24);
+        }
     }
     .sec-7__second-image {
         max-width:rem(427);

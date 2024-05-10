@@ -2,13 +2,16 @@
 #em240508arai {
     .mv {
         padding-bottom: rem(41);
+        @include mq(md) {
+            padding-bottom: 0;
+        }
     }
     .mv__inner {
         padding-left: rem(121);
         @include mq(md) {
             padding-left: $padding-sp;
             padding-right: $padding-sp;
-            margin-top: vw(-43);
+            margin-top: vw(-37);
         }
     }
     .mv__video {
@@ -22,7 +25,7 @@
             content: "";
             display: inline-block;
             width: 100%;
-            padding-top: calc(688 / 390 * 100%);
+            padding-top: 175.3%;
         }
     }
     .mv__video video {
@@ -42,11 +45,12 @@
         align-items: flex-end;
         gap: rem(49);
         @include mq(md) {
-            margin-top: vw(-30);
+            margin-top: vw(0);
             flex-direction: column;
             align-items: center;
             gap: vw(24);
-            padding-right: vw(10);
+            padding-right: vw(12);
+            position: relative;
         }
     }
     .mv__text_emmi {
