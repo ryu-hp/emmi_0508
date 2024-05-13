@@ -16,6 +16,9 @@
     .sec-7__first-contents {
         padding-top: rem(214);
         background: linear-gradient(2700deg, $color-bg_black 0%, $color-bg_black rem(926), transparent rem(926), transparent 100%);
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(50% - 50vw);
         @include mq(md) {
             padding-top: vw(90);
             background: linear-gradient(2700deg, $color-bg_black 0%, $color-bg_black vw(300), transparent vw(300), transparent 100%);

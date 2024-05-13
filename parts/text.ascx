@@ -23,6 +23,8 @@ rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/xpc4vxx.css">
 <%-- コンテンツ部分用CSS読み込みここまで --%>
 
 <%-- ▽ 編集エリア ▽ --%>
@@ -30,10 +32,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   <div class="em240508arai__wrapper">
     <div class="mv" id="mv">
       <div class="mv__video">
-        <video class="only-pc" loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_pc.mp4"></video>
-        <video class="only-sp" loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_sp.mp4"></video>
+        <video class="only-pc" loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_pc.mp4"></video>
+        <video class="only-sp" loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_sp.mp4"></video>
       </div>
-      <div class="mv__inner">
+      <div class="mv__inner inner">
         <div class="mv__text">
           <div class="mv__text_emmi">
             <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_01_mv_text_1.svg" alt="emmi">
@@ -53,14 +55,40 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
                 <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_03.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
               </a>
             </div>
-            <div class="sec-1__text-top js-text_up">
-              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_13.svg" alt="freely" loading="lazy">
+            <div class="sec-1__text-top_container typing-effect typing-effect--7">
+              <div class="sec-1__text-top">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_13.svg" alt="freely" loading="lazy">
+              </div>
             </div>
-            <div class="sec-1__text-left js-text_up">
-              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_14.svg" alt="and" loading="lazy">
+            <div class="sec-1__text-left_container typing-effect-upright typing-effect-upright--14">
+              <div class="sec-1__text-left">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_14.svg" alt="and" loading="lazy">
+              </div>
             </div>
-            <div class="sec-1__text-bottom js-text_up">
-              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_15.svg" alt="boldly" loading="lazy">
+            <div class="sec-1__text-bottom_container typing-effect typing-effect--9">
+              <div class="sec-1__text-bottom">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_15.svg" alt="boldly" loading="lazy">
+              </div>
+            </div>
+            <div class="sec-1__slide js-sec_1-swiper only-sp js-fadeIn">
+              <!-- Swiper -->
+              <div id="js-sec_1-swiper" class="swiper js-sec_1-swiper">
+                <!-- 必要に応じたwrapper -->
+                <div class="swiper-wrapper">
+                  <!-- スライド -->
+                  <div class="swiper-slide">
+                    <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai03">
+                      <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_02.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai03">
+                      <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_04.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Swiper -->
             </div>
           </div>
         </div>
@@ -79,26 +107,6 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_04.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
           </a>
         </div>
-      </div>
-      <div class="sec-1__slide js-sec_1-swiper only-sp js-fadeIn">
-        <!-- Swiper -->
-        <div id="js-sec_1-swiper" class="swiper js-sec_1-swiper">
-          <!-- 必要に応じたwrapper -->
-          <div class="swiper-wrapper">
-            <!-- スライド -->
-            <div class="swiper-slide">
-              <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai03">
-                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_02.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai03">
-                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_04.jpg" alt="Dress, Leggings, Rings, Bangle, Socks, Shoes (ASICS for emmi)" loading="lazy">
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /Swiper -->
       </div>
     </div>
     <div id="sec-2" class="sec-2">
@@ -123,11 +131,30 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
           </div>
         </div>
         <div class="sec-2__second">
-          <div class="sec-2__second-text text_js">
-            <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_16.svg" alt="Sporty Chic" loading="lazy">
+          <div class="sec-2__second-text">
+            <div class="sec-2__second-text-01_container typing-effect typing-effect--5">
+              <div class="sec-2__second-text-01">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_18_sportychic_01.svg" alt="Sp" loading="lazy">
+              </div>
+            </div>
+            <div class="sec-2__second-text-02_container typing-effect typing-effect-es--5">
+              <div class="sec-2__second-text-02">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_18_sportychic_02.svg" alt="orty" loading="lazy">
+              </div>
+            </div>
+            <div class="sec-2__second-text-03_container typing-effect typing-effect--5">
+              <div class="sec-2__second-text-03">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_18_sportychic_03.svg" alt="Ch" loading="lazy">
+              </div>
+            </div>
+            <div class="sec-2__second-text-04_container typing-effect typing-effect--5">
+              <div class="sec-2__second-text-04">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_18_sportychic_04.svg" alt="ic" loading="lazy">
+              </div>
+            </div>
           </div>
           <div class="sec-2__second-image js-fadeIn">
-            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai11">
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai08">
               <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_08.jpg" alt="T-shirt,Skirt,Pants,Necklace,Shoes" loading="lazy">
             </a>
           </div>
@@ -175,7 +202,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             </div>
           </div>
           <div class="sec-2__third-contents">
-            <div class="sec-2__third-text_contents">
+            <div class="sec-2__third-text_contents typing-effect typing-effect--16">
               <div class="sec-2__third-text">
                 <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_17.svg" alt="Playful" loading="lazy">
               </div>
@@ -188,8 +215,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
           </div>
         </div>
         <div class="sec-2__fourth short_video js-fadeIn">
-          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai12">
-            <video loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_c.mp4" loading="lazy"></video>
+          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508araiALL">
+            <video loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_c.mp4" loading="lazy"></video>
           </a>
         </div>
       </div>
@@ -240,7 +267,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         </div>
         <div class="sec-3__bottom-contents">
           <div class="sec-3__bottom-circle short_video js-fadeIn">
-            <video loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai.mp4" loading="lazy" alt="円"></video>
+            <video loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai.mp4" loading="lazy" alt="円"></video>
           </div>
           <div class="sec-3__bottom-image js-fadeIn">
             <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai14">
@@ -253,15 +280,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <div id="sec-4" class="sec-4">
       <div class="sec-4__inner">
         <div class="sec-4__first-contents">
-          <div class="sec-4__first-text text_js">
+          <div class="sec-4__first-text">
             <div class="sec-4__first-text-top_container typing-effect typing-effect--10">
-              <div class="sec-4__first-text-top"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_1.svg" alt="function"></div loading="lazy">
+              <div class="sec-4__first-text-top"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_1.svg" alt="function" loading="lazy"></div>
             </div>
             <div class="sec-4__first-text-center_container typing-effect typing-effect--12">
-              <div class="sec-4__first-text-center"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_2.svg" alt="function"></div loading="lazy">
+              <div class="sec-4__first-text-center"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_2.svg" alt="function" loading="lazy"></div>
             </div>
             <div class="sec-4__first-text-bottom_container typing-effect typing-effect--11">
-              <div class="sec-4__first-text-bottom"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_3.svg" alt="function"></div loading="lazy">
+              <div class="sec-4__first-text-bottom"><img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_07_function_3.svg" alt="function" loading="lazy"></div>
             </div>
           </div>
           <div class="sec-4__first-image js-fadeIn">
@@ -283,8 +310,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
               </a>
             </div>
           </div>
-          <div class="sec-4__second-text text_js">
-            <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_08.svg" alt="wellness" loading="lazy">
+          <div class="sec-4__second-text_container typing-effect-upright typing-effect-upright--11">
+            <div class="sec-4__second-text">
+              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_08.svg" alt="wellness" loading="lazy">
+            </div>
           </div>
         </div>
         <div class="sec-4__third">
@@ -341,8 +370,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             </a>
           </div>
           <div class="sec-4__third-bottom_image short_video js-fadeIn">
-            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai11">
-              <video loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_a.mp4" loading="lazy"></video>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508araiALL">
+              <video loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_a.mp4" loading="lazy"></video>
             </a>
           </div>
         </div>
@@ -424,7 +453,16 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <div id="sec-6" class="sec-6">
       <div class="sec-6__inner">
         <div class="sec-6__top_text text_js">
-          <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_10.svg" alt="Journey" loading="lazy">
+          <div class="sec-6__top_text-01_container typing-effect typing-effect-es--5">
+            <div class="sec-6__top_text-01">
+              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_19_journey_01.svg" alt="Jour" loading="lazy">
+            </div>
+          </div>
+          <div class="sec-6__top_text-02_container typing-effect typing-effect-es--5">
+            <div class="sec-6__top_text-02">
+              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_19_journey_02.svg" alt="ney" loading="lazy">
+            </div>
+          </div>
         </div>
         <div class="sec-6__first_image js-fadeIn">
           <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai01">
@@ -483,10 +521,12 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <div id="sec-7" class="sec-7">
       <div class="sec-7__inner">
         <div class="sec-7__first-contents">
-          <div class="sec-7__first-image js-fadeIn">
-            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai13">
-              <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_34.jpg" alt="Dress,Bra top,Bare top,Socks,Shoes" loading="lazy">
-            </a>      
+          <div class="sec-7__first-contents_inner inner">
+            <div class="sec-7__first-image js-fadeIn">
+              <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai13">
+                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_34.jpg" alt="Dress,Bra top,Bare top,Socks,Shoes" loading="lazy">
+              </a>      
+            </div>
           </div>
         </div>
         <div class="sec-7__second-images">
@@ -534,21 +574,23 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             </div>
           </div>
           <div class="sec-8__top-images">
-            <div class="sec-8__top-first_image js-fadeIn">
-              <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai10">
-                <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_38.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
-              </a>      
-            </div>
-            <div class="sec-8__top_second-flex">
-              <div class="sec-8__top_second-image sec-8__top_second-image--left js-fadeIn">
+            <div class="sec-8__top-images_inner inner">
+              <div class="sec-8__top-first_image js-fadeIn">
                 <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai10">
-                  <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_39.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
+                  <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_38.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
                 </a>      
               </div>
-              <div class="sec-8__top_second-image sec-8__top_second-image--right js-fadeIn">
-                <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai10">
-                  <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_40.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
-                </a>      
+              <div class="sec-8__top_second-flex">
+                <div class="sec-8__top_second-image sec-8__top_second-image--left js-fadeIn">
+                  <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai10">
+                    <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_39.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
+                  </a>      
+                </div>
+                <div class="sec-8__top_second-image sec-8__top_second-image--right js-fadeIn">
+                  <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai10">
+                    <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_40.jpg" alt="Tops,Bra top,Pants,Cap (KEEN),Necklace,Shoes (NIKE)" loading="lazy">
+                  </a>      
+                </div>
               </div>
             </div>
           </div>
@@ -592,8 +634,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
           </a>      
         </div>
         <div class="sec-9__second_image short_video js-fadeIn">
-          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508arai13">
-            <video loop autoplay src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_b.mp4" loading="lazy"></video>
+          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508araiALL">
+            <video loop autoplay playsinline muted src="https://emmi.mash-cdn.com/contents/ImagesPkg/movie/em240508arai_b.mp4" loading="lazy"></video>
           </a>      
         </div>
         <div class="sec-9__third-images">
@@ -616,7 +658,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
           </div>
         </div>
         <div class="sec-9__fourth-contents">
-          <div class="sec-9__fourth-text_container typing-effect typing-effect--7">
+          <div class="sec-9__fourth-text_container typing-effect typing-effect--16">
             <div class="sec-9__fourth-text">
               <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_text_02_energy.svg" alt="energy" loading="lazy">
             </div>
@@ -643,6 +685,52 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
               <img src="<%= Constants.PATH_ROOT %>Page/feature/atelier/240508_arai/image/0320_emmi_52.jpg" alt="Cardigan,Bare top,Skirt,Leggings,Necklace,Shoes (NIKE)" loading="lazy">
             </a>          
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="sec-copy" class="sec-copy">
+      <div class="sec-copy__inner">
+        <div class="sec-copy__cotents">
+          <ul class="sec-copy__list">
+            <li class="sec-copy__item">
+              <p>
+                Model: Kiko Inagaki (donna)
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Photographer: Seiji Fujimori
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Director: Nobu Arakawa
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Cinematographer: Yuzuru Nakatani
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Stylist: Yoko Irie (SIGNO)
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Hair & Make-UP: KOUTA
+              </p>
+            </li>
+            <li class="sec-copy__item">
+              <p>
+                Design:  LABORATORIES
+              </p>
+            </li>
+          </ul>
+          <p class="sec-copy__all">
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=em240508araiALL" class="sec-copy__all_text">Check all items</a>
+          </p>
         </div>
       </div>
     </div>

@@ -4,10 +4,8 @@
         margin-top: rem(249);
         background: $color-bg_black;
         overflow-x: clip;
-        margin-bottom: rem(1154);
         @include mq(md) {
             margin-top: vw(269);
-            margin-bottom: vw(350);
         }
     }
     .sec-9__inner {
@@ -98,6 +96,8 @@
         margin-right: auto;
         transform: translateX(rem(21));
         width: 100%;
+        mix-blend-mode: multiply;
+        -webkit-mix-blend-mode: multiply;
         @include mq(md) {
             max-width:vw(127.6);
             transform: translateX(vw(6));

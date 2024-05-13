@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
       delay: 250,
       disableOnInteraction: false,
     },
-    effect: "fade",
+    effect: "slide",
+    speed: 1, 
   });
 
   // スクロール時のフェードアニメーション

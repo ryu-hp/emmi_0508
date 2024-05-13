@@ -13,16 +13,10 @@ a:hover {
 }
 .inner {
     width: 100%;
-    max-width: calc($inner + ($padding-pc * 2));
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
+    max-width: calc($inner);
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-    @include mq(md) {
-        padding-right: $padding-sp;
-        padding-left: $padding-sp;
-    }
 }
 
 .only-sp {

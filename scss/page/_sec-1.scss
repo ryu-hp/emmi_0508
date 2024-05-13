@@ -1,9 +1,10 @@
 @use "../global" as *;
 #em240508arai {
     .sec-1 {
-        margin-top: rem(334);
+        margin-top: rem(375);
         background: $color-bg_black;
         position: relative;
+        z-index: 1;
         @include mq(md) {
             margin-top: vw(329.3);
             overflow-x: clip;
@@ -20,6 +21,7 @@
         margin-right: auto;
         margin-left: auto;
         box-sizing: border-box;
+        position: relative;
         @include mq(md) {
             padding-top: 0;
             padding-bottom: 0;
@@ -33,16 +35,18 @@
         padding-left: rem(34.1);
         padding-right: rem(186);
         @include mq(md) {
-            padding-top: vw(468);
-            padding-bottom: vw(136);
-            padding-left: vw(65);
-            padding-right: vw(66);
+            padding-top: vw(447.5);
+            padding-bottom: vw(104);
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     .sec-1__main_image {
         max-width:rem(694);
         @include mq(md) {
             max-width: vw(259);
+            position: relative;
+            z-index: 1;
         }
     }
     .sec-1__image-top {
@@ -50,6 +54,7 @@
         left: 0;
         top: rem(-137);
         max-width:rem(1140);
+        z-index: 1;
         @include mq(md) {
             top: vw(-199);
             width: calc(485 / 324 * 100vw);
@@ -61,6 +66,7 @@
         right: 0;
         top: rem(718);
         max-width:rem(513);
+        z-index: 0;
     }
     .sec-1__image-bottom {
         position: absolute;
@@ -72,48 +78,88 @@
     }
     .sec-1__image_contents {
         position: relative;
+        @include mq(md) {
+            padding-top: vw(20.4);
+            padding-left: vw(19.6);
+            padding-bottom: vw(31.8);
+            margin-left: vw(45.4);
+            background: $color-bg_black;
+            max-width:vw(278.4);
+            margin-right: auto;
+        }
     }
-    .sec-1__text-top {
+    .sec-1__text-top_container {
         position: absolute;
         max-width:rem(512);
         left: rem(29.6);
         top: rem(-77.1);
+        mix-blend-mode: multiply;
+        -webkit-mix-blend-mode: multiply;
+        z-index: 1;
         @include mq(md) {
             max-width: vw(160);
-            left: vw(47.8);
-            top: vw(-20.4);
+            left: vw(66.5);
+            top: 0;
+        }
+    }
+    .sec-1__text-top {
+        width:rem(512);
+        @include mq(md) {
+            width: vw(160);
+        }
+    }
+    .sec-1__text-left_container {
+        position: absolute;
+        max-width:rem(115.86);
+        width: 100%;
+        left: rem(-34.1);
+        max-height: rem(256.34);
+        top: calc(50% + rem(22));
+        transform: translateY(-50%);
+        mix-blend-mode: multiply;
+        -webkit-mix-blend-mode: multiply;
+        z-index: 1;
+        @include mq(md) {
+            max-width: vw(36);
+            max-height: vw(80.11);
+            left: 0;
+            top: calc(50% + vw(6.5));
         }
     }
     .sec-1__text-left {
-        position: absolute;
-        max-width:rem(256.32);
-        left: rem(-34.1);
-        top: calc(50% + rem(22));
-        transform: translateY(-50%);
+        height: rem(256.34);
         @include mq(md) {
-            max-width: vw(36);
-            left: vw(-19.6);
-            top: calc(50% + vw(13));
+            height: vw(80.11);
         }
     }
-    .sec-1__text-bottom {
+    .sec-1__text-bottom_container {
         position: absolute;
         max-width:rem(573.76);
         right: rem(-39);
         bottom: rem(-70);
+        mix-blend-mode: multiply;
+        -webkit-mix-blend-mode: multiply;
+        z-index: 1;
         @include mq(md) {
             max-width: vw(179.3);
             right: vw(23.1);
-            bottom: vw(-31.8);
+            bottom: 0;
+        }
+    }
+    .sec-1__text-bottom {
+        width:rem(573.76);
+        @include mq(md) {
+            width: vw(179.3);
         }
     }
     .sec-1__slide {
         @include mq(md) {
             position: absolute;
-            z-index: -1;
-            top: vw(157);
-            right: 0;
-            max-width: vw(307);
+            z-index: 0;
+            bottom: calc(vw(239) + vw(31.8));
+            right: calc((vw(45.4) + vw(278.4)) - 100vw);
+            max-width: vw(306);
+            width: 100vw;
         }
     }
 }

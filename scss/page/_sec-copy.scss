@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+#em240508arai {
+  .sec-copy {
+    margin-top: rem(894);
+    font-size: rem(30);
+    color: #0014FF;
+    margin-bottom: rem(729);
+    font-style: normal;
+    @include mq(md) {
+      margin-top: vw(199);
+      font-size: vw(16);
+      margin-bottom: vw(42);
+    }
+  }
+  .sec-copy__inner {
+    padding-left: rem(33);
+    padding-right: rem(33);
+    max-width: $inner;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    @include mq(md) {
+      padding-left: vw(19);
+      padding-right: vw(23);
+    }
+  }
+  .sec-copy__cotents {
+    display: flex;
+    gap: rem(300);
+    @include mq(md) {
+      flex-direction: column;
+      gap: vw(103);
+    }
+  }
+  .sec-copy__item {
+    line-height: calc(40 / 30);
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    @include mq(md) {
+      line-height: calc(24 /16);
+    }
+  }
+  .sec-copy__all {
+    @include mq(md) {
+      text-align: right;
+    }
+  }
+  .sec-copy__all_text {
+    text-decoration: underline;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+  }
+}
